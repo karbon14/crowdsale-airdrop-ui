@@ -8,40 +8,42 @@ const APP_DIR = path.resolve(__dirname, 'src')
 
 // Html Auto generator
 const HtmlPlugin = new HtmlWebpackPlugin({
-  title: 'Karbon14 | Airdrop',
+  title: 'Karbon14 Airdrop',
   template: require('html-webpack-template'),
   appMountId: 'app',
   favicon: 'src/favicon.ico',
   baseHref: '/',
   inject: false,
   mobile: true,
-  scripts: ['https://www.googletagmanager.com/gtag/js?id=UA-126698710-1'],
+  scripts: ['https://www.googletagmanager.com/gtag/js?id=UA-126698710-2'],
   meta: [
     { charset: 'utf-8' },
     {
       name: 'description',
-      content: 'Decentralizing the Proof of Lifes in the Blockchain'
+      content:
+        'Get your Karbon14 Free Tokens now. Follow our Airdrop steps and claim your reward'
     },
     {
       name: 'keywords',
       content:
-        'Karbon14, ICO, Crowdsale, Blockchain, Samart Contracts, Proof of Life'
+        'Karbon14, ICO, Crowdsale, Blockchain, Smart Contracts, Proof of Life, Airdrop, Freetokens, Free Tokens, Ethereum, ERC20, ERC-20'
     },
     {
       property: 'og:description',
-      content: 'Decentralizing the Proof of Lifes in the Blockchain'
+      content:
+        'Get your Karbon14 Free Tokens now. Follow our Airdrop steps and claim your reward'
     },
     {
       property: 'canonical',
-      content: 'https://karbon14.org/'
+      content: 'https://airdrop.karbon14.org/'
     },
     {
       property: 'image',
-      content: 'https://karbon14.org/preview.jpg'
+      content: 'https://airdrop.karbon14.org/preview.jpg'
     },
     {
       property: 'og:title',
-      content: 'Karbon14'
+      content: 'Karbon14 Airdrop'
     },
     {
       property: 'og:type',
@@ -49,11 +51,11 @@ const HtmlPlugin = new HtmlWebpackPlugin({
     },
     {
       property: 'og:url',
-      content: 'https://karbon14.org/'
+      content: 'https://airdrop.karbon14.org/'
     },
     {
       property: 'og:site_name',
-      content: 'Karbon14'
+      content: 'Karbon14 Airdrop'
     }
   ]
 })
@@ -66,10 +68,12 @@ const getPlugins = argv => {
       'process.env.API_URL': JSON.stringify(
         process.env.API_URL || 'http://localhost:80/v1'
       ),
-      'process.env.CROWDSALE_URL': JSON.stringify(
-        process.env.CROWDSALE_URL || 'https://crowdsale.karbon14.org'
+      'process.env.HOME_URL': JSON.stringify(
+        process.env.HOME_URL || 'https://karbon14.org'
       ),
-      'process.env.NETWORK': JSON.stringify(process.env.NETWORK || '1')
+      'process.env.AIRDROP_URL': JSON.stringify(
+        process.env.AIRDROP_URL || 'https://goo.gl/forms/m83bqWYcWs1TigJI2'
+      )
     })
   ]
 

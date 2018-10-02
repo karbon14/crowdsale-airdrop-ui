@@ -13,14 +13,15 @@ const Intro = ({ getTranslation }) => (
         <div id="particles-js" className="particles-container" />
         <div className="container">
           <div className="banner-content">
-            <div className="content">
+            <div className="content content-right">
               <div>
                 <h1>{getTranslation('intro.title', true)}</h1>
                 <p>{getTranslation('intro.subtitle', true)}</p>
+                <p>{getTranslation('intro.airdrop', true)}</p>
               </div>
             </div>
             <div className="content">
-              <a href={'https://goo.gl/forms/m83bqWYcWs1TigJI2'}>
+              <a rel="noopener noreferrer" href={process.env.AIRDROP_URL}>
                 {getTranslation('intro.callToAction')}
               </a>
             </div>

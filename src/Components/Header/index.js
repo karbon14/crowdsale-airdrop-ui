@@ -26,12 +26,11 @@ const Header = ({ sections = [], selectedLanguage, getTranslation }) => (
                       <div className="container">
                         <div className="logo__area">
                           <div className="flex-area">
-                            <a>
-                              <img
-                                src={logo}
-                                alt="Karbon14 Logo"
-                                onClick={() => onGoToSection('intro')}
-                              />
+                            <a
+                              rel="noopener noreferrer"
+                              href={process.env.HOME_URL}
+                            >
+                              <img src={logo} alt="Karbon14 Logo" />
                             </a>
                             <div className="container-dropdown">
                               <SwitcherLang />
