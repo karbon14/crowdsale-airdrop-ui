@@ -11,6 +11,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
   }
 
   .container {
@@ -21,17 +22,16 @@
     padding-right: 15px;
     padding-left: 15px;
     justify-content: space-between;
-    margin-bottom: 50px;
 
     .banner-content {
       margin-top: 120px;
-      padding-top: 60px;
       max-height: 675px;
       width: 100%;
       display: flex;
       z-index: 1;
       align-items: center;
       flex-direction: column;
+      justify-content: center;
 
       .content {
         width: 100%;
@@ -47,11 +47,17 @@
         }
 
         p {
-          font-size: 1.27em;
-          line-height: 1.68;
+          font-size: 1.67em;
+          line-height: 1.28;
           font-weight: 300;
           color: #ffffff;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
+
+          &:last-of-type {
+            font-size: 1.27em;
+            line-height: 1.68;
+            margin-bottom: 20px;
+          }
         }
 
         a {
@@ -65,7 +71,7 @@
           text-transform: uppercase;
           border: 0px none white;
           border-radius: 23px 23px 23px 23px;
-          padding: 0px 25px;
+          padding: 0px 20px;
           font-size: 15px;
         }
       }
@@ -95,9 +101,7 @@
       max-width: 720px;
 
       .banner-content {
-        padding-top: 0;
         margin-bottom: 80px;
-        flex-direction: column-reverse;
 
         .content-left {
           width: 100%;
@@ -111,11 +115,6 @@
           br {
             display: none;
           }
-        }
-
-        .content-right {
-          width: 100%;
-          min-height: 270px;
         }
       }
     }
@@ -131,25 +130,6 @@
       padding-left: 20px;
       padding-right: 20px;
       max-width: 100%;
-
-      .banner-content {
-        .content-left {
-          > div {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-          }
-
-          h1 {
-            text-align: center;
-            font-size: 2.1em;
-          }
-
-          p {
-            text-align: center;
-          }
-        }
-      }
     }
   }
 }
@@ -158,31 +138,17 @@
   .intro {
     .container {
       .banner-content {
-        .content-left {
+        .content {
           h1 {
-            font-size: 1.5em;
+            font-size: 1.7em;
           }
 
           p {
-            font-size: 0.75em;
-          }
-        }
-      }
-    }
-  }
-}
+            font-size: 1.2em;
 
-@media only screen and (max-width: 480px) {
-  .intro {
-    .container {
-      .banner-content {
-        .content-left {
-          h1 {
-            font-size: 1.5em;
-          }
-
-          p {
-            font-size: 0.75em;
+            &:last-of-type {
+              font-size: 1em;
+            }
           }
         }
       }
@@ -195,7 +161,12 @@
     .container {
       .banner-content {
         margin-top: 80px;
-        margin-bottom: 0px;
+
+        .content {
+          p :global(br) {
+            display: none;
+          }
+        }
       }
     }
   }

@@ -22,7 +22,7 @@ const App = () => (
         }
         gtag('js', new Date())
 
-        gtag('config', 'UA-126698710-1')
+        gtag('config', 'UA-126698710-2')
       })
     }}
     render={() => (
