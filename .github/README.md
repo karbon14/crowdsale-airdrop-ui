@@ -1,6 +1,5 @@
 # Karbon14 Airdrop
 [![Travis badge](https://travis-ci.org/karbon14/crowdsale-airdrop-ui.svg?branch=master)](https://travis-ci.org/karbon14/crowdsale-airdrop-ui)
-[![Greenkeeper badge](https://badges.greenkeeper.io/karbon14/crowdsale-airdrop-ui.svg)](https://greenkeeper.io/)
 
 # Index
 
