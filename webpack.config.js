@@ -38,7 +38,7 @@ const HtmlPlugin = new HtmlWebpackPlugin({
       content: 'https://airdrop.karbon14.org/'
     },
     {
-      property: 'image',
+      property: 'og:image',
       content: 'https://airdrop.karbon14.org/preview.jpg'
     },
     {
